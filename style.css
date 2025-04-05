@@ -6,6 +6,7 @@ body{
     align-items: center;
     flex-direction: column;
     margin: 0;
+    color: #ffffff;
 }
 
 .carousel {
@@ -19,6 +20,33 @@ body{
     justify-content: center;
     align-items: center;
     margin: 30% 40%; 
+    text-align: center;
+}
+
+.carousel-text {
+    position: absolute;
+    color: white;
+    font-family: 'Arimo', sans-serif;
+    font-size: 3rem;
+    z-index: 10;
+    width: 100%;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+/* "Conoce" y "Nuestras" alineados a la derecha */
+.carousel-text-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 20px;
+    line-height: 1;
+}
+
+/* "Instalaciones" centrado */
+.carousel-text-center {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .carousel img {
@@ -136,6 +164,7 @@ body{
 }
 
 
+
 /* Centrar la barra de navegación */
 .navbar {
     background-color: #0E0D12;
@@ -199,4 +228,142 @@ body{
 .dropdown-item:hover {
     background-color: #333;
     color: #fff;
+}
+
+
+.bread {
+    display: flex;
+    width: 100dvh;
+    margin-left: 32%;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Changed width to 80% */
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    position: relative; /* Ensure it centers relative to the screen */
+    left: 60vh; /* Center horizontally with the new width */
+}
+
+
+.text-purple {
+    color: #fff;
+}
+
+/* Oculta la línea de tabs predeterminada */
+.nav-tabs {
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Estilo individual de cada tab como una card */
+.nav-tabs .nav-link {
+    background: #0e0d12;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 15px 20px;
+    color: #fff;
+
+    transition: all 0.3s ease-in-out;
+    height: 100px;
+    width: 130px;
+}
+
+/* Efecto hover para que parezca una card con elevación */
+.nav-tabs .nav-link:hover {
+    background: #0e0d12;
+}
+
+.nav-tabs .nav-link.active {
+    background: #fff;
+    color: #0e0d12;
+    border-color: #fff;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+
+.tab-content {
+    margin-top: 30px;
+    background: #0e0d12;
+    border-radius: 10px;
+}
+
+@media (max-width: 776px) {
+    .tab-content>.tab-pane {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* Mantiene el borde superior en tabs inactivos */
+    .tab-pane.accordion-item {
+        border: 1px solid #fff;
+        border-radius: 10px;
+        background: #0e0d12;
+    }
+
+    /* Asegura que el borde superior sea visible siempre */
+    .tab-pane.accordion-item:not(.show) {
+        border-top: 1px solid #fff;
+    }
+}
+
+/* Acordeon */
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #0e0d12;
+}
+
+.accordion-button {
+    background-color: #0e0d12;
+    color: #fff;
+}
+
+/* Mantiene la flecha original de Bootstrap pero cambia su color */
+.accordion-button::after {
+    filter: brightness(0) invert(1);
+    /* Flecha blanca por defecto */
+}
+
+/* Flecha negra cuando el acordeón está activo */
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0);
+    /* Invierte el color de blanco a negro */
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+section {
+    display: flex;
+    width: 80vw;
+    max-width: 1200px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
 }

@@ -9,17 +9,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <title>INKspire</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>INKspire</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPKptNW3vzmrAAafOQDNsPRu6aME9RmZWUPg&s">
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPKptNW3vzmrAAafOQDNsPRu6aME9RmZWUPg&s">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark"
         style="background-color: #0E0D12;margin-left: 30%; margin-right: 50%">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./hefziviene/logo.png" alt="Brand Logo"
+            <a class="navbar-brand" href="index.html"><img src="./hefziviene/logo.png" alt="Brand Logo"
                     style="height: 60px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,13 +29,13 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+                        <a class="nav-link" aria-current="page" href="nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#carrusel">Instalaciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Únete</a>
+                        <a class="nav-link" href="unete.html">Únete</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -42,23 +43,34 @@
                             Renta de Cubículos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Flash 1/2 día</a></li>
-                            <li><a class="dropdown-item" href="#">BodySuit 1 día</a></li>
-                            <li><a class="dropdown-item" href="#">Infinity Plan Semanal</a></li>
+                            <li><a class="dropdown-item" href="index.html #myTab">Flash 1/2 día</a></li>
+                            <li><a class="dropdown-item" href="index.html #myTab">BodySuit 1 día</a></li>
+                            <li><a class="dropdown-item" href="index.html #myTab">Infinity Plan Semanal</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.facebook.com/" target="_blank"> <!-- Enlace a Facebook -->
-                            <i class="fab fa-facebook"></i> <!-- Ícono de Facebook -->
+                        <a class="nav-link" href="https://www.facebook.com/share/16PnAeFWKN/" target="_blank">
+                            <i class="fab fa-facebook"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"> <i class="fab fa-instagram"></i></a>
+                        <a class="nav-link" href="https://www.instagram.com/lahefzi?igsh=b2ZjZ2M5ZjN5bmJz">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div class="bread">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html" style="color: white;">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">de chava</li>
+            </ol>
+        </nav>
+    </div>
+
 
     <div class="container">
         <div class="find">
@@ -79,9 +91,88 @@
         <img src="./hefziviene/estudio-fotografico.jpg">
         <img src="./hefziviene/sala-estudio-de-tatuajes.jpg">
         <img src="./hefziviene/image.jpg">
-        <button class="carousel-btn prev" onclick="changeSlide(-1)"> < </button>
-        <button class="carousel-btn next" onclick="changeSlide(1)"> > </button>
+        <button class="carousel-btn prev" onclick="changeSlide(-1)">
+            < </button>
+                <button class="carousel-btn next" onclick="changeSlide(1)"> > </button>
     </div>
+
+    <div class="tabss container py-5">
+        <ul class="nav nav-tabs d-none d-lg-flex" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="flash-tab" data-bs-toggle="tab" data-bs-target="#flash-tab-pane"
+                    type="button" role="tab" aria-controls="flash-tab-pane" aria-selected="true">
+                    <i class="bi bi-lightning-charge-fill fs-3 mb-3"></i><br>
+                    Flash 1/2 Día
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="bodysuit-tab" data-bs-toggle="tab" data-bs-target="#bodysuit-tab-pane"
+                    type="button" role="tab" aria-controls="bodysuit-tab-pane" aria-selected="false">
+                    <i class="bi bi-body-text fs-3 mb-3"></i><br>
+                    Bodysuit 1 Día
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="infinity-tab" data-bs-toggle="tab" data-bs-target="#infinity-tab-pane"
+                    type="button" role="tab" aria-controls="infinity-tab-pane" aria-selected="false">
+                    <i class="bi bi-infinity fs-3 mb-3"></i><br>
+                    Infinity Plan Semanal
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content accordion" id="myTabContent">
+            <div class="tab-pane fade show active accordion-item" id="flash-tab-pane" role="tabpanel"
+                aria-labelledby="flash-tab" tabindex="0">
+                <h2 class="accordion-header d-lg-none" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Flash 1/2 Día
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show d-lg-block" aria-labelledby="headingOne"
+                    data-bs-parent="#myTabContent">
+                    <div class="accordion-body">
+                        <img src="./hefziviene/flash.png" alt="Flash 1/2 Día" class="img-fluid mb-3">
+                        <strong>Ideal para diseños pequeños o medianos.</strong> Este plan incluye hasta 4 horas de sesión continua con uno de nuestros artistas. Perfecto para tatuajes flash o piezas rápidas. Incluye consulta previa y cuidados posteriores.
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade accordion-item" id="bodysuit-tab-pane" role="tabpanel"
+                aria-labelledby="bodysuit-tab" tabindex="0">
+                <h2 class="accordion-header d-lg-none" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Bodysuit 1 Día
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingTwo"
+                    data-bs-parent="#myTabContent">
+                    <div class="accordion-body">
+                        <img src="./hefziviene/bodysuit.png" alt="Bodysuit 1 Día" class="img-fluid mb-3">
+                        <strong>Un día completo de trabajo intensivo.</strong> 8 horas dedicadas a realizar piezas grandes como backpieces, sleeves o trabajos corporales. Incluye descanso, boceto personalizado y acompañamiento durante todo el proceso.
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade accordion-item" id="infinity-tab-pane" role="tabpanel"
+                aria-labelledby="infinity-tab" tabindex="0">
+                <h2 class="accordion-header d-lg-none" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Infinity Plan Semanal
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingThree"
+                    data-bs-parent="#myTabContent">
+                    <div class="accordion-body">
+                        <img src="./hefziviene/infinity.png" alt="Infinity Plan Semanal" class="img-fluid mb-3">
+                        <strong>La opción ideal para proyectos extensos.</strong> Este plan incluye sesiones ilimitadas durante una semana. Diseñado para clientes que buscan cobertura corporal total, retoques múltiples o iniciar varias piezas al mismo tiempo.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
 
     <script>
         let currentIndex = 0;
